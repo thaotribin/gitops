@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-bootstrap
+  name: vault
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/thaotribin/gitops
-    path: argocd-dev/workload/cluster-bootstrap
+    path: argocd-dev/workload/cluster-bootstrap/vault
     targetRevision: main
     directory:
       recurse: true
