@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/thaotribin/gitops
-    path: argocd-dev/init-dev
+    path: argocd-dev/cluster-bootstrap
     targetRevision: main
     directory:
       recurse: true
