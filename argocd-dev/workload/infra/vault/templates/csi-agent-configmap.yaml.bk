@@ -3,7 +3,8 @@ Copyright (c) HashiCorp, Inc.
 SPDX-License-Identifier: MPL-2.0
 */}}
 
-{{- if and (include "vault.csiEnabled" .) (eq (.Values.csi.agent.enabled | toString) "true") }}
+{{- template "vault.csiEnabled" . -}}
+{{- if and (.csiEnabled) (eq (.Values.csi.agent.enabled | toString) "true") -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
