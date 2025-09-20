@@ -17,6 +17,8 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 data:
   config.hcl: |
+data:
+  config.hcl: |
     vault {
         {{- if .Values.global.externalVaultAddr }}
         "address" = "{{ .Values.global.externalVaultAddr }}"
