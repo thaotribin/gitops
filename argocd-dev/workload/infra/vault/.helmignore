@@ -5,6 +5,7 @@
 # Common VCS dirs
 .git/
 .gitignore
+.terraform/
 .bzr/
 .bzrignore
 .hg/
@@ -19,7 +20,10 @@
 .project
 .idea/
 *.tmproj
-# img folder
-img/
-# Changelog
-CHANGELOG.md
+
+# CI and test
+.circleci/
+.github/
+.gitlab-ci.yml
+test/
+scratch/
