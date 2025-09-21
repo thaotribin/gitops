@@ -7,10 +7,9 @@ spec:
   project: default
   source:
     repoURL: https://github.com/thaotribin/gitops
+    chart: vault
+    targetRevision: 0.1.0
     path: argocd-dev/workload/infra/vault
-    targetRevision: main
-    directory:
-      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: dev-infra
